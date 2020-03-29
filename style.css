@@ -1,0 +1,294 @@
+/*
+* {
+    border: solid 1px black;
+}
+*/
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*OVERALL*/
+
+.topTop {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+.topTop img {
+    width: 95px;
+    height: auto;
+}
+
+.topTop h1 {
+    font-family: 'Cantarell', sans-serif;
+    color: rgb(40, 40, 141);
+    font-style: bold;
+}
+
+.topTop a {
+    text-decoration: none;
+}
+
+.topMenu {
+  margin-top: 0px;
+    /*TOP MENU ON ALL PAGES*/
+    background-color: rgb(40, 40, 141);
+    font-family: 'Cantarell', sans-serif;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+.topMenu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 3vmin;
+    margin: 0px;
+    width: 80vw;
+}
+
+.topMenu li {
+  /* NOTE:
+    Scaled down menu font so it doesn't compete with page title */
+    font-size: 15pt;
+    text-align: center;
+}
+
+.topMenu li a,
+.topMenu li a:visited,
+.topMenu li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.topMenu li a:hover {
+    background-color: white;
+    color: rgb(40, 40, 141);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 2vmin;
+}
+
+/*OVERALL*/
+
+/*INFO PAGE*/
+
+.contentContainer_info {}
+
+/*SUBHERO CONTENT*/
+.subHeroContent {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(241, 241, 255), white);
+    justify-content: center;
+    align-items: center;
+}
+
+.subHeroContent img {
+    text-align: center;
+    /* margin: 5pt; */
+    /* width: 75%; */
+    /* height: auto; */
+    width: 100vw;
+
+    max-height: 90vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.subHeroContent p {
+    text-align: center;
+    font-size: 35pt;
+    color: black;
+}
+
+/*SUBHERO CONTENT*/
+
+/*OTHER CONTENT*/
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+.text h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* NOTE:
+    Adding margin to match narrow-ed paragraphs and give space between sections */
+    margin: 5vw 5vw 5vw 5vw;
+}
+
+.text p {
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 3em;
+    padding: 0px 8vw 0px 8vw;
+
+}
+
+/*General HR to march width of rest of site*/
+  hr {
+    margin: 5vw 10vw 0vw 10vw;
+  }
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 10pt;
+}
+
+.videoGrid { /*Please play all the videos at the same time for maximum effect.*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 5vw 10vw 5vw 10vw;
+}
+
+/*OTHER CONTENT*/
+
+/*INFO PAGE*/
+
+/*MEDIA PAGE*/
+
+.contentContainer_media {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
+}
+
+/*MEDIA PAGE*/
+
+/*AFTERMATH PAGE*/
+
+
+
+
+
+/*AFTERMATH PAGE*/
+
+
+
+
+
+/*MOBILE RULES GO IN HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media screen and (max-width: 600px) {
+
+    .topTop {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+    
+    .topTop img {
+        width: 105px;
+        height: auto;
+        align-items: center;
+    }
+    
+    .topTop h1 {
+        font-family: 'Cantarell', sans-serif;
+        color: rgb(40, 40, 141);
+        font-style: bold;
+        text-align: center;
+    }
+    
+    .topTop a {
+        text-decoration: none;
+    }
+
+    .topMenu {
+        margin-top: 0px;
+          /*TOP MENU ON ALL PAGES*/
+          background-color: rgb(40, 40, 141);
+          font-family: 'Cantarell', sans-serif;
+          font-style: italic;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20pt;
+        margin-right: 20pt;
+    }
+    
+    .text h1 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 6vmin;
+        /* NOTE:
+        Adding margin to match narrow-ed paragraphs and give space between sections */
+        margin: 5vw 5vw 5vw 5vw;
+    }
+    
+    .text p {
+        font-size: 12pt;
+        text-align: justify;
+        line-height: 3em;
+        padding: 0px 8vw 0px 8vw;
+    
+    }
+
+
+      hr {
+        margin: 5vw 10vw 0vw 10vw;
+      }
+    
+    .video {
+        display: flex;
+        justify-content: center;
+        margin: 10pt;
+    }
+
+      .videoGrid { /*Please play all the videos at the same time for maximum effect.*/
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        margin: 5vw 10vw 5vw 10vw;
+    }
+
+    .contentContainer_media {
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        margin: 5vw 10vw 5vw 10vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer p {
+        font-size: 2vmin;
+    }
+
+}
+
+/*END MOBILE RULES.*/
